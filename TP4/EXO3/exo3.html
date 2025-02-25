@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculatrice IMC</title>
+    </head>
+    <body>
+        <h1>Calculatrice D'IMC</h1>
+        <table>
+            <tr>
+                <td><label >Poids (kg):</label></td>
+                <td><input type="number" id="poids"></td>
+            </tr>
+            <tr>
+                <td><label >Taille (m):</label></td>
+                <td><input type="number" id="taille"></td>
+            </tr>
+        </table>
+            <br><br>
+            <button onclick="calculer()">Calculer</button>
+            <br><br>
+            <p id="result"></p>
+
+        <script>
+            function calculer(){
+                let imc= Number(poids.value) / Number(taille.value)**2;
+                
+
+
+            }
+        </script>
+        
+    </body>
+</html>
