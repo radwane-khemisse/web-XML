@@ -7,4 +7,5 @@ function troisNombres(a, b, c) {
 a=prompt("Entrez le premier nombre 1: ");
 b=prompt("Entrez le premier nombre 2: ");
 c=prompt("Entrez le premier nombre 3: ");
+console.log('a = ', a + '  b =',b +'   c = ',c);
 console.log(troisNombres(a, b, c)); 

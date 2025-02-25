@@ -9,4 +9,5 @@ function hjms(seconds) {
 }
 
 let seconds = prompt("Entrez le nombre de secondes : ");
+console.log('seconds = ', seconds);
 console.log(hjms(seconds));
