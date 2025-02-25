@@ -26,11 +26,9 @@ degreeC(tempF);
 
 ## Exercice 2 : Conversion de durées
 
-### Objectif
 
 Convertir un nombre donné de secondes en jours, heures, minutes et secondes.
 
-### Code
 
 ```javascript
 function hjms(seconds) {
@@ -46,7 +44,6 @@ let seconds = prompt("Entrez le nombre de secondes : ");
 console.log(hjms(seconds));
 ```
 
-### Capture d'écran
 
 ![exo2](images/exo2.png)
 
