@@ -24,10 +24,8 @@
 
         <script>
             function calculer(){
-                let imc= Number(poids.value) / Number(taille.value)**2;
-                
-
-
+                let imc = Number(poids.value) / (Number(taille.value) ** 2);
+                document.getElementById("result").innerText = "Votre IMC est de " + imc.toFixed(2);
             }
         </script>
         

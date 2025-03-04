@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice Scientifique</title>
+    <link rel="stylesheet" href="exo4.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="clearDisplay()">CE</button>
+            <button onclick="appendToDisplay('%')">%</button>
+            
+            <button onclick="appendToDisplay('(')">(</button>
+            <button onclick="appendToDisplay(')')">)</button>
+
+            <button onclick="appendToDisplay('sin(')">sin</button>
+            <button onclick="appendToDisplay('cos(')">cos</button>
+            <button onclick="appendToDisplay('tan(')">tan</button>
+            <button onclick="appendToDisplay('log(')">log</button>
+
+            <button onclick="appendToDisplay('π')">π</button>
+            <button onclick="appendToDisplay('e')">e</button>
+            <button onclick="appendToDisplay('√(')">√</button>
+            <button onclick="appendToDisplay('^')">x^</button>
+
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('/')">÷</button>
+
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')">×</button>
+
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('-')">−</button>
+
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="appendToDisplay('+')">+</button>
+        </div>
+    </div>
+    <script >
+        function appendToDisplay(value) {
+            let display = document.getElementById('display');
+            if (value === 'π') {
+                display.value += Math.PI;
+            } else if (value === 'e') {
+                display.value += Math.E;
+            } else {
+                display.value += value;
+            }
+        }
+        
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+        }
+        
+        function calculateResult() {
+            let display = document.getElementById('display').value;
+            try {
+                display = display.replace('√', 'Math.sqrt');
+                display = display.replace('π', Math.PI);
+                display = display.replace('e', Math.E);
+                display = display.replace('sin', 'Math.sin');
+                display = display.replace('cos', 'Math.cos');
+                display = display.replace('tan', 'Math.tan');
+                display = display.replace('log', 'Math.log');
+                display = display.replace('^', '**');
+                document.getElementById('display').value = eval(display);
+            } catch (e) {
+                document.getElementById('display').value = 'Erreur';
+            }
+        }
+        
+    </script>
+</body>
+</html>
