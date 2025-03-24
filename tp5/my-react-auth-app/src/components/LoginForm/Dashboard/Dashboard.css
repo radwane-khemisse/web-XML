@@ -1,0 +1,52 @@
+.dashboard-layout {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background-color: #f9fcff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .logo {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .logout-btn {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .logout-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    background-color: #fff;
+  }
+  

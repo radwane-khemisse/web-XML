@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "radwane",
+      "username": "radwane",
+      "password": "radwane"
+    },
+    {
+      "id": "2",
+      "name": "abdessamad",
+      "username": "abdessamad",
+      "password": "abdessamad"
+    },
+    {
+      "id": "3",
+      "name": "rawane",
+      "username": "rawane",
+      "password": "rawane"
+    },
+    {
+      "id": "4",
+      "username": "zineb",
+      "password": "zineb",
+      "name": "zineb"
+    },
+    {
+      "id": "8c0e",
+      "username": "dd",
+      "name": "dd",
+      "password": "dd"
+    }
+  ]
+}

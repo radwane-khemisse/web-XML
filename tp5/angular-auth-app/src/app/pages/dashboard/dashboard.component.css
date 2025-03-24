@@ -1,0 +1,45 @@
+.dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background: #f9fcff;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .sidebar img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+  }
+  
+  .sidebar button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #e74c3c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 30px;
+    background: white;
+  }
+  
